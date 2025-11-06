@@ -155,3 +155,9 @@ The backend server provides the following RESTful API endpoints:
 | `POST`   | `/api/cart`     | Adds a new item to the cart or updates quantity. |
 | `DELETE` | `/api/cart/:id` | Removes a specific item from the cart by its ID. |
 | `POST`   | `/api/checkout` | Clears the cart and returns a mock receipt.      |
+
+---
+
+## ✨ Live Demo
+Loom Video: https://www.loom.com/share/5000ee155e3842a8903d577873319390
+
