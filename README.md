@@ -41,25 +41,39 @@ The application integrates with a live external API for product data and uses a 
 
 ```
 vibe-commerce/
-├── backend/            # Node.js/Express Backend
-│   ├── config/         # Database connection logic
-│   ├── models/         # Mongoose schemas
-│   ├── routes/         # API endpoint definitions
-│   ├── .env            # (You must create this for credentials)
-│   ├── server.js       # Main server entry point
-│   └── package.json
+├── .gitignore # Root gitignore for the monorepo
+├── README.md # Project README file
 │
-├── frontend/           # React Frontend
-│   ├── public/
-│   └── src/
-│       ├── assets/     # Local images
-│       ├── components/ # Reusable React components
-│       ├── App.js      # Main application component
-│       ├── api.js      # Axios configuration
-│       └── ...
+├── backend/ # Node.js/Express Backend Server
+│ ├── config/
+│ │ └── db.js # MongoDB connection logic
+│ ├── models/
+│ │ └── CartItem.js # Mongoose schema for cart items
+│ ├── routes/
+│ │ └── api.js # All API endpoint definitions
+│ ├── .env # Environment variables (MUST be created)
+│ ├── .gitignore # Ignores backend-specific files like .env
+│ ├── package.json
+│ └── server.js # Main server entry point
 │
-├── .gitignore          # (We will create this)
-└── README.md
+└── frontend/ # React Frontend Application
+├── public/ # Public assets and index.html
+└── src/
+├── assets/ # Local images used in the project
+├── components/ # Reusable React components
+│ ├── Cart.js
+│ ├── CheckoutForm.js
+│ ├── Header.js
+│ ├── ProductItem.js
+│ ├── ProductList.js
+│ └── ReceiptModal.js
+├── api.js # Axios configuration for backend calls
+├── App.css # Main application styles
+├── App.js # Main application component and logic
+├── index.css # Global styles
+├── index.js # Entry point for React app
+├── .gitignore # Ignores frontend-specific files
+└── package.json
 ```
 
 ---
